@@ -54,6 +54,8 @@ camera.lookAt(cube.position);
 
 document.querySelector("body").appendChild(renderer.domElement);
 
+const controls = new OrbitControls(camera, renderer.domElement);
+
 
 function animate() {
   // set everything that needs to change here
